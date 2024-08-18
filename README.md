@@ -103,3 +103,56 @@ Voila! My website was up and running after resolving those errors
 Make sure you delete all your resources to avoid getting charged. This is a super important task for every single project you set up.
 
 ![Create Bucket Screenshot](assets/screenshots/step-5-delete-resources.png)
+
+
+## Terraform Script
+
+I have provided a Terraform script to automate the setup of your S3 static website. Use the following script:
+
+```hcl
+# main.tf
+
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_s3_bucket" "website_bucket" {
+  bucket = "nextwork-website-project-dahrihadri"
+  acl    = "public-read"
+  force_destroy = true
+
+  website {
+    index_document = "index.html"
+  }
+
+  versioning {
+    enabled = true
+  }
+
+  lifecycle {
+    prevent_destroy = false
+  }
+}
+
+resource "aws_s3_bucket_object" "website_files" {
+  bucket = aws_s3_bucket.website_bucket.bucket
+  key    = "index.html"
+  source = "assets/index.html"
+  acl    = "public-read"
+}
+
+resource "aws_s3_bucket_object" "website_assets" {
+  bucket = aws_s3_bucket.website_bucket.bucket
+  key    = "website_files/"
+  source = "assets/NextWork - Everyone should be in a job they love_files/"
+  acl    = "public-read"
+}
+```
+- Replace nextwork-website-project-dahrihadri with your desired unique bucket name.
+- Update the source paths to point to your local files.
+- This project is licensed under the MIT License. See the [License](#license) file for more information. Feel free to adjust the details based on your specific needs or any additional information you want to include.
+
+
+
+
+
