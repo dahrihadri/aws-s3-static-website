@@ -52,10 +52,10 @@ Developers and teams use Amazon S3 because of its durability, scalability, and c
 
 Creating an Amazon S3 bucket took me 5 mins...
 - Some of the configuration steps include:
-  - The bucket’s Region: I pick the region closest to my primary user base or where my other AWS resources are located to minimize latency and data transfer costs.
-  - Access Control Lists: Enable
-  - Bucket versioning: Enable
-  - Public Access: Enable
+  - `The bucket’s Region`: I pick the region closest to my primary user base or where my other AWS resources are located to minimize latency and data transfer costs.
+  - `Access Control Lists`: Enable
+  - `Bucket versioning`: Enable
+  - `Public Acces`s: Enable
  
 S3 bucket names have to be globally unique, which means that each bucket name must be distinct across all AWS accounts and regions. No two buckets can have the same name anywhere in the world.
 
@@ -67,7 +67,7 @@ My created bucket!
 ### Step 2: Upload Website Content
 
 - Next, I uploaded my website’s files into my S3 bucket.
-- There were two files to upload: [index.html](aws-s3-static-website/assets/index.html) and Nextwork. -Everyone should have a job where they love_files, you can find additional resources and assets [here](https://github.com/dahrihadri/aws-s3-static-website/tree/main/assets). index.html references and utilizes files from the website_files directory to render properly. For example, Images and other resources in website_files are used to enrich content on the webpage.
+- There were two files to upload: [`index.html`](aws-s3-static-website/assets/index.html) and `Nextwork. -Everyone should have a job where they love_files`, you can find additional resources and assets [here](https://github.com/dahrihadri/aws-s3-static-website/tree/main/assets). index.html references and utilizes files from the website_files directory to render properly. For example, Images and other resources in website_files are used to enrich content on the webpage.
 
 Object successfully uploaded
 
@@ -77,7 +77,7 @@ Object successfully uploaded
 
 - Website hosting is a service that allows organizations or individuals to post a web page on the internet.
 - To enable website hosting, I clicked on the properties tab on my s3 bucket and then scrolled down to “static website hosting” then clicked “Enabled”
-- Once the static website is enabled, S3 produces a bucket endpoint URL http://nextwork-website-project-dahrihadri.s3-website-us-west-2.amazonaws.com/
+- Once the static website is enabled, S3 produces a bucket endpoint URL `http://nextwork-website-project-dahrihadri.s3-website-us-west-2.amazonaws.com/`
 
 Setting up static website hosting...
 
