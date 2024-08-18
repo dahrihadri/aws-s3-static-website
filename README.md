@@ -107,7 +107,7 @@ Make sure you delete all your resources to avoid getting charged. This is a supe
 
 ## Terraform Script
 
-I have provided a Terraform script to automate the setup of your S3 static website. Use the following script:
+I have provided a [Terraform script](assets/terraformscript/main.tf) to automate the setup of your S3 static website. Use the following script:
 
 ```hcl
 # main.tf
