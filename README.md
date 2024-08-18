@@ -148,7 +148,7 @@ resource "aws_s3_bucket_object" "website_assets" {
   acl    = "public-read"
 }
 ```
-- Replace nextwork-website-project-dahrihadri with your desired unique bucket name.
+- Replace `nextwork-website-project-dahrihadri` with your desired unique bucket name.
 - Update the source paths to point to your local files.
 - This project is licensed under the MIT License. See the [License](#license) file for more information. Feel free to adjust the details based on your specific needs or any additional information you want to include.
 
