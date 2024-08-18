@@ -1,5 +1,10 @@
 # aws-s3-static-website
 Step-by-step guide hiw I hosting a static website on Amazon S3, including setup instructions, code examples, and resource management tips. Perfect for beginners looking to explore AWS services and deploy their first website
+
+## Documentation
+
+You can download the project documentation as a PDF from [here](docs/documentation-of-Host-a-website-on-amazon-s3.pdf).
+
 # AWS S3 Static Website Hosting
 
 This project demonstrates how to I host a static website on Amazon S3. i'll create an S3 bucket, upload my website files, and configure the bucket to serve my site publicly on the internet.
