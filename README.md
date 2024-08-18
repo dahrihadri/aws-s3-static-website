@@ -86,7 +86,6 @@ Setting up static website hosting...
 - The reason for this error was due to the actual HTML/image files that I've uploaded are still private. It's kind of like having a bucket on display, so everyone can see the bucket - but the contents are covered up, preventing anyone from seeing what's inside.
 - To solve this error, I need to set the permission of the objects to public by enabled the object ACLs.
 
-The error!
 
 ![Create Bucket Screenshot](assets/screenshots/step4-website-error.png)
 
@@ -97,3 +96,5 @@ Voila! My website was up and running after resolving those errors
 ### Step 5: Delete Resources
 
 Make sure you delete all your resources to avoid getting charged. This is a super important task for every single project you set up.
+
+![Create Bucket Screenshot](assets/screenshots/step-5-delete-resources.png)
