@@ -67,7 +67,7 @@ My created bucket!
 ### Step 2: Upload Website Content
 
 - Next, I uploaded my website’s files into my S3 bucket.
-- There were two files to upload: index.html and Nextwork. -Everyone should have a job where they love_files. index.html references and utilizes files from the website_files directory to render properly. For example, Images and other resources in website_files are used to enrich content on the webpage.
+- There were two files to upload: [index.html](aws-s3-static-website/assets/index.html) and Nextwork. -Everyone should have a job where they love_files, you can find additional resources and assets [here](https://github.com/dahrihadri/aws-s3-static-website/tree/main/assets). index.html references and utilizes files from the website_files directory to render properly. For example, Images and other resources in website_files are used to enrich content on the webpage.
 
 Object successfully uploaded
 
@@ -89,11 +89,11 @@ Setting up static website hosting...
 
 - When I visited the bucket endpoint URL, an error message appeared.
 - The reason for this error was due to the actual HTML/image files that I've uploaded are still private. It's kind of like having a bucket on display, so everyone can see the bucket - but the contents are covered up, preventing anyone from seeing what's inside.
-- To solve this error, I need to set the permission of the objects to the public by enabling the object ACLs.
-
 
 ![Create Bucket Screenshot](assets/screenshots/step4-website-error.png)
 
+- To solve this error, I need to set the permission of the objects to the public by enabling the object ACLs.
+  
 Voila! My website was up and running after resolving those errors
 
 ![Create Bucket Screenshot](assets/screenshots/step4-website-success.png)
