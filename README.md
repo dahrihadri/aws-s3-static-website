@@ -1,5 +1,10 @@
 # aws-s3-static-website
 Step-by-step guide hiw I hosting a static website on Amazon S3, including setup instructions, code examples, and resource management tips. Perfect for beginners looking to explore AWS services and deploy their first website
+
+## Documentation
+
+You can download the project documentation as a PDF from [here](docs/documentation-of-Host-a-website-on-amazon-s3.pdf).
+
 # AWS S3 Static Website Hosting
 
 This project demonstrates how to I host a static website on Amazon S3. i'll create an S3 bucket, upload my website files, and configure the bucket to serve my site publicly on the internet.
@@ -86,7 +91,6 @@ Setting up static website hosting...
 - The reason for this error was due to the actual HTML/image files that I've uploaded are still private. It's kind of like having a bucket on display, so everyone can see the bucket - but the contents are covered up, preventing anyone from seeing what's inside.
 - To solve this error, I need to set the permission of the objects to public by enabled the object ACLs.
 
-The error!
 
 ![Create Bucket Screenshot](assets/screenshots/step4-website-error.png)
 
@@ -97,3 +101,5 @@ Voila! My website was up and running after resolving those errors
 ### Step 5: Delete Resources
 
 Make sure you delete all your resources to avoid getting charged. This is a super important task for every single project you set up.
+
+![Create Bucket Screenshot](assets/screenshots/step-5-delete-resources.png)
